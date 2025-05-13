@@ -94,6 +94,7 @@ export default function Home() {
         }, 1000);
 
         return () => clearInterval(timer);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -171,8 +172,8 @@ export default function Home() {
                         <motion.span
                             style={{ backgroundSize: `${paraAmt}% 100%` }}
                         >
-                            The National Students' Space Challenge (NSSC),
-                            Asia’s largest astro-technology fest, is the
+                            The National Students&apos; Space Challenge (NSSC),
+                            Asia&apos;s largest astro-technology fest, is the
                             flagship event of spAts, dedicated to space and
                             space tech. Since its inception in 2011, NSSC has
                             provided a national platform for aspiring engineers
@@ -234,7 +235,7 @@ export default function Home() {
                     <div id={styles.altAboutContainer}>
                         <Image
                             src="/spAtsLogo.webp"
-                            alt="GTA Vice City"
+                            alt="spAts Logo"
                             width={500}
                             height={300}
                             style={{ objectFit: "contain" }}
@@ -246,7 +247,7 @@ export default function Home() {
                                     backgroundSize: `${altTextAmt}% 100%`,
                                 }}
                             >
-                                Space Technology Students' Society, or spAts, is
+                                Space Technology Students&apos; Society, or spAts, is
                                 the official student body under Kalpana Chawla
                                 Space Technology Cell, IIT Kharagpur.
                                 Established in 2008 by a small group of young
@@ -260,7 +261,7 @@ export default function Home() {
                                 discussion forum, spAts evolved into a
                                 professionally run society that hosts many
                                 events, along with the first and largest space
-                                technology fest in India, the National Students'
+                                technology fest in India, the National Students&apos;
                                 Space Challenge.
                             </motion.span>
                         </p>

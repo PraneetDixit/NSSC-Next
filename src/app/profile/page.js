@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import styles from "./Profile.module.css";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Profile() {
     const pathname = usePathname();
@@ -58,7 +59,7 @@ export default function Profile() {
                         </section>
                         <div id={styles.profile}>
                             <div id={styles.profileMain}>
-                                <img src={user.avatar} alt="Avatar" />
+                                <Image src={user.avatar} alt="Avatar" width={150} height={150}/>
                                 <h2 className="pricedown">{user.username}</h2>
                                 <p>
                                     <span className={styles.yellow}>

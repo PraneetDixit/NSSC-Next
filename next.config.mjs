@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "retinaaiims.org",
+                hostname: "avatar.iran.liara.run",
                 port: "",
                 pathname: "/**",
             },

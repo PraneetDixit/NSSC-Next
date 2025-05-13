@@ -44,10 +44,13 @@ export default function Cursor() {
             document.body.removeEventListener("mouseover", handleMouseOver);
             document.body.removeEventListener("mouseout", handleMouseOut);
         };
-    }, []);    useEffect(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    useEffect(() => {
         if (isRotating) {
             setRotationAngle(rotationAngle + 180);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isRotating]);
 
     const handleRotationComplete = () => {

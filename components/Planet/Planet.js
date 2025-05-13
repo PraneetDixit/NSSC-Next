@@ -50,6 +50,7 @@ export default function Planet({
         } else {
             setTargetAngleForSelected(null);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [activeIndex, index, totatPlanets]);
 
     useAnimationFrame((time) => {
