@@ -1,0 +1,50 @@
+#teamsContainer {
+    background-color: black;
+}
+
+#teamsHeader {
+    background-image: linear-gradient(
+            to bottom,
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            rgb(0 0 0)
+        ),
+        url("/teamsBg.jpg");
+    padding: 40px 40px 200px 50px;
+    background-color: rgba(0 0 0/40%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#teamsLogo {
+    text-align: right;
+    font-size: 88px;
+    line-height: 1;
+    background-image: url("https://i.giphy.com/TZf4ZyXb0lXXi.webp");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    background-position: right;
+}
+
+#teamsHeader h2 {
+    color: var(--yellow);
+    font-size: 96px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-weight: 500;
+}
+
+#teams {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 120px 40px;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: -180px;
+}

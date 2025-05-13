@@ -1,0 +1,98 @@
+#loginHeader{
+    background-image: linear-gradient(to bottom, transparent, transparent, transparent, transparent, rgb(0 0 0)), url(/loginBg.jpg);
+    padding: 40px 40px 50px 50px;
+    background-color: rgba(0 0 0 / 30%);
+    background-position: center;
+}
+
+#loginLogo{
+    text-align: right;
+    font-size: 88px;
+    line-height: 1;
+    background-image: url("https://i.giphy.com/TZf4ZyXb0lXXi.webp");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+    background-position: right;
+}
+
+#loginHeader h2{
+    color:var(--yellow);
+    font-size: 96px;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+#loginHeader form{
+    padding: 70px 50px;
+    display: flex;
+    width: fit-content;
+    margin: 100px auto;
+    position: relative;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 450px;
+}
+
+#loginHeader input{
+    background-color: var(--text-sec);
+    padding: 15px 20px;
+    font-size: 18px;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+#loginHeader form button{
+    padding: 15px 20px;
+    margin-top: 25px;
+    font-size: 18px;
+    z-index: 5;
+    border-radius: 5px;
+    background-color: var(--yellow-light);
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#loginHeader form button:hover{
+    background-color: var(--yellow);
+    
+}
+
+#loginHeader form::before{
+    background-color: black;
+    border-radius: 12px;
+    border: 2px solid var(--yellow);
+    transform: matrix(1.00091, 0.0524078, 0.0174551, 1, 0, 0);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: border 0.3s;
+}
+
+#loginHeader form:has(input:focus)::before{
+    border: 3px solid var(--yellow-light);
+}
+
+@media screen and (max-width: 900px) {
+    #loginLogo{
+        font-size: 60px;
+    }
+
+    #loginHeader h2{
+        font-size: 75px;
+        padding: 35px 0 0 0;
+    }
+
+    #loginHeader{
+        padding: 40px 30px 50px 40px
+    }
+}

@@ -1,0 +1,144 @@
+#scheduleHeader {
+    background-image: url(/scheduleBg.jpg);
+    padding: 40px 40px 50px 50px;
+    background-color: rgba(0 0 0 / 30%);
+    background-position: center 75%;
+    background-size: cover;
+}
+
+#scheduleLogo {
+    text-align: right;
+    font-size: 88px;
+    line-height: 1;
+    background-image: url("https://i.giphy.com/TZf4ZyXb0lXXi.webp");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    background-position: right;
+}
+
+#scheduleHeader h2 {
+    color: var(--yellow);
+    font-size: 96px;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+#scheduleHeader p {
+    margin-top: 20px;
+}
+
+.chip {
+    margin-right: 20px;
+    padding: 6px 18px;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#schedule {
+    background-color: black;
+}
+
+#tabs {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    padding: 15px 20px;
+    margin: 0 8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-sec);
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--text-sec);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tab h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.tab p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.activeDate {
+    background-color: var(--text-sec);
+    color: black;
+}
+
+#scheduleContent {
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    padding: 80px 50px;
+}
+
+#solarSystem {
+    margin: 0 auto;
+    width: 550px;
+    height: 550px;
+    position: relative;
+}
+
+#ring {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid #ffffff1a;
+}
+
+#sun {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-image: linear-gradient(
+    135deg,
+    hsl(265deg 100% 20%) 0%,
+    hsl(261deg 89% 26%) 8%,
+    hsl(255deg 78% 33%) 17%,
+    hsl(250deg 71% 40%) 25%,
+    hsl(243deg 66% 47%) 33%,
+    hsl(236deg 77% 52%) 42%,
+    hsl(225deg 100% 50%) 50%,
+    hsl(223deg 100% 49%) 58%,
+    hsl(222deg 100% 49%) 67%,
+    hsl(220deg 100% 48%) 75%,
+    hsl(219deg 100% 47%) 83%,
+    hsl(217deg 100% 46%) 92%,
+    hsl(216deg 100% 45%) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sunCore{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: ghostwhite;
+}

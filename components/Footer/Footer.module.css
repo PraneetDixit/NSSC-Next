@@ -1,0 +1,53 @@
+#preFooter{
+    /* padding: 60px 0; */
+    background-color: black;
+}
+
+#mario{
+    background-image: url(https://i.giphy.com/Pb0d5MsNSeGoA2v1zv.webp);
+    /* background-image: url(https://retinaaiims.org/mario_running.webp); */
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+    height: 80px;
+    /* height: 200px; */
+}
+
+.footer{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(17, 24, 39), rgb(0, 0, 0));
+    padding-top: 120px;
+}
+
+#footerLogo{
+    background-image: url("https://i.giphy.com/TZf4ZyXb0lXXi.webp");
+    -webkit-background-clip: text;
+    font-size: 240px;
+    font-weight: 700;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    -webkit-text-fill-color: transparent;
+}
+
+#footerText{
+    font-size: 18px;
+    color: var(--text-tert);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 32px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#footerText a{
+    color: var(--yellow);
+}
+
+@media screen and (max-width: 850px){
+    #footerLogo{
+        font-size: 160px;
+    }
+}

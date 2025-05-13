@@ -1,0 +1,170 @@
+#profileContainer{
+    background-color: black;
+}
+
+#profileHeader{
+    background-image: linear-gradient(to bottom, transparent, transparent, transparent, transparent, rgb(0 0 0)), url("/profileBg.jpg");
+    padding: 40px 40px 50px 50px;
+    background-color: rgba(0 0 0/30%);
+    background-position: top;
+    min-height: 400px;
+    background-size: cover;
+}
+
+#profileLogo{
+    text-align: right;
+    font-size: 88px;
+    line-height: 1;
+    background-image: url("https://i.giphy.com/TZf4ZyXb0lXXi.webp");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    background-position: right;
+}
+
+#profileHeader h2{
+    color:var(--yellow);
+    font-size: 96px;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+#profileMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -300px;
+    gap: 15px;
+    padding: 50px 40px;
+}
+
+#profileMain img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#profileMain h2{
+    color: var(--yellow);
+    font-size: 48px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#profileMain p{
+    color: var(--text-sec);
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.yellow{
+    color: var(--yellow);
+    display: block;
+}
+
+.actions{
+    text-align: center;
+}
+
+.actions button{
+    border: 1px solid var(--text-sec);
+    padding: 16px 28px;
+    border-radius: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-sec);
+}
+
+.actions button:hover{
+    background-color: var(--text-sec);
+    color: black;
+}
+
+.actions button:first-child{
+    margin-right: 20px;
+    background-color: var(--text-sec);
+    color: black;
+}
+
+.actions button:first-child:hover{
+    background-color: var(--text-tert);
+    border-color: var(--text-tert);
+}
+
+#profileDetails{
+    margin: 0 auto;
+    max-width: 770px;
+    padding: 30px 20px;
+    border-top: 1px solid rgb(31, 41, 55);
+    border-bottom: 1px solid rgb(31, 41, 55);
+    color: var(--text-sec);
+}
+
+#profileDetails h4{
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+#profileDetails p span{
+    font-weight: 600;
+}
+
+#profileDetails p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    flex-basis: 45%;
+    flex-shrink: 0;
+}
+
+#personal{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px){
+    #profileHeader{
+        padding: 40px 20px 50px 20px;
+    }
+
+    #profileLogo{
+        font-size: 60px;
+    }
+
+    #profileMain img{
+        width: 120px;
+        height: 120px;
+    }
+
+    #profileMain h2{
+        font-size: 42px;
+    }
+
+    #profileMain p{
+        font-size: 18px;
+    }
+
+    .actions button{
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    #profileDetails{
+        padding: 20px;
+        gap: 30px;
+    }
+
+    #profileDetails h4{
+        font-size: 20px;
+    }
+
+    #profileDetails p{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,15 @@
+#cursorWrapper{
+    position: fixed;
+    pointer-events: none;
+    top: -16px;
+    left: -16px;
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.36));
+    z-index: 1000;
+}
+
+#cursorWrapper > div{
+    width: 32px;
+    height: 32px;
+}

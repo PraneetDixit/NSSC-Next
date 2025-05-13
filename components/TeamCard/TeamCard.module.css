@@ -1,0 +1,105 @@
+.memberWrapper {
+    width: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 0.64;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+@property --init-transparent {
+    syntax: "<percentage>";
+    initial-value: 80%;
+    inherits: false;
+}
+
+@property --init-color {
+    syntax: "<percentage>";
+    initial-value: 100%;
+    inherits: false;
+}
+
+.sheen {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-image: radial-gradient(white, #3984ff00 80%);
+    border-radius: 50%;
+    filter: blur(25px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.memberWrapper:hover .sheen {
+    opacity: 15%;
+}
+
+.picContainer {
+    height: 100%;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    transition: height 0.5s;
+}
+
+.gradient {
+    width: 100%;
+    height: 0%;
+    transition: height 0.5s;
+}
+
+.memberWrapper:hover .picContainer {
+    height: 70%;
+}
+
+.memberWrapper:hover .gradient {
+    height: 30%;
+}
+
+.data {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    transition: height 0.5s;
+}
+
+.memberWrapper:hover .data {
+    height: calc(30% - 15px);
+}
+
+.data h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    text-shadow: 2px 2px 0px black;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.data h3 {
+    padding: 0 15px;
+    opacity: 0.8;
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    text-shadow: 2px 2px 0px black;
+    padding: 0 15px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.memberWrapper:hover .data h3 {
+    height: auto;
+}
+.memberWrapper:hover .data h2 {
+    margin-bottom: 0;
+}

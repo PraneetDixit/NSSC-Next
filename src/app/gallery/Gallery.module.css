@@ -1,0 +1,78 @@
+#galleryHeader {
+    background-image: url(/galleryBg.jpg);
+    padding: 40px 40px 50px 50px;
+    background-color: rgba(0 0 0 / 30%);
+    background-position: center 75%;
+    background-size: cover;
+}
+
+#galleryLogo {
+    text-align: right;
+    font-size: 88px;
+    line-height: 1;
+    background-image: url("https://i.giphy.com/TZf4ZyXb0lXXi.webp");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    background-position: right;
+}
+
+#galleryHeader h2 {
+    color: var(--yellow);
+    font-size: 96px;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+#galleryContent {
+    background-color: black;
+    padding: 60px 80px;
+}
+
+#carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.carouselItem{
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    padding: 16px;
+    border-radius: 41px;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    /* gap: 10px; */
+}
+
+.carouselDescription{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carouselIcon{
+    background-color: ghostwhite;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 25px;
+}
+
+.carouselText{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+    flex-grow: 1;
+    padding: 0 20px;
+    /* flex-grow: 1; */
+}
